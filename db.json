@@ -2,15 +2,15 @@
   "sneakers": [
     {
       "id": 1,
-      "title": "sdfsdfs",
+      "title": "Мужские кроссовки Nike Blazer Mid Suede1",
       "price": 9,
       "imageUrl": "sneakers/1.jpg"
     },
     {
       "id": 2,
-      "title": "Мужски",
+      "title": "Мужские кроссовки Nike Air Max 270",
       "price": 15600,
-      "imageUrl": ""
+      "imageUrl": "sneakers/2.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "id": 4,
       "title": "Кроссовки Puma X Aka Boku Future Rider",
       "price": 8999,
-      "imageUrl": "sneakers/asus.jpg"
+      "imageUrl": "sneakers/4.jpg"
     },
     {
       "id": 5,
@@ -52,19 +52,13 @@
       "id": 9,
       "title": "Кроссовки Orange Boomb Edition1`",
       "price": 7499,
-      "imageUrl": "sneakers/20170822164935_19198.png"
+      "imageUrl": "sneakers/9.jpg"
     },
     {
       "id": 10,
       "title": "Кроссовки Orange Boomb Edition3",
       "price": 7499,
       "imageUrl": "sneakers/10.png"
-    },
-    {
-      "title": "Мужские Кроссовки Nike Air Max 27110",
-      "price": 15600,
-      "imageUrl": "sneakers/2.jpg",
-      "id": 11
     }
   ],
   "favourites": [
