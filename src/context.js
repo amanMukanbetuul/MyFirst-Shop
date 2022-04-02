@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useState} from "react";
+ import React, {createContext, useContext, useState} from "react";
 import axios from "axios";
 
 export const CustomContext = createContext();
@@ -12,35 +12,35 @@ export const Context = (props) => {
 
 
     const getAllShoes = (title = '') => {
-      axios(`https://basket-shop1.herokuapp.com/api/sneakers?title_like=${title}`)
+      axios(`https://myfirst-shop.herokuapp.com/api/sneakers?title_like=${title}`)
           .then(({data}) => setShoes(data))
           .catch((err) => alert('Error'))
     };
 
     const postFavourites = (item) => {
-        axios.post('https://basket-shop1.herokuapp.com/api/favourites', {...item})
+        axios.post('https://myfirst-shop.herokuapp.com/api/favourites', {...item})
             .then(() => getAllFavourites())
     };
 
     const delFavourites = (id) => {
-      axios.delete(`https://basket-shop1.herokuapp.com/api/favourites/${id}`)
+      axios.delete(`https://myfirst-shop.herokuapp.com/api//favourites/${id}`)
           .then(() => getAllFavourites())
     };
 
     const getAllFavourites = () => {
-        axios.get('https://basket-shop1.herokuapp.com/api/favourites')
+        axios.get('https://myfirst-shop.herokuapp.com/api/favourites')
             .then(({data}) => setFavourites(data))
             .catch((err) => alert('Error'))
     };
 
     const getAllOrders = () => {
-        axios.get('https://basket-shop1.herokuapp.com/api/orders')
+        axios.get('https://myfirst-shop.herokuapp.com/api/orders')
             .then(({data}) => setOrders(data))
             .catch((err) => alert('Error'))
     };
 
     const postOrders = (item) => {
-        axios.post('https://basket-shop1.herokuapp.com/api/orders', {...item})
+        axios.post('https://myfirst-shop.herokuapp.com/api/orders', {...item})
             .then(() => getAllOrders())
     };
 

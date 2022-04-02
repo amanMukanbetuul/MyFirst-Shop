@@ -29,7 +29,7 @@ const Home = () => {
                 <Slider/>
 
                 <div className={styles.action}>
-                    <h2 className={styles.title}>все кроссовки</h2>
+                    <h2 className={styles.title}>все кроссовки vjb </h2>
                     <input onChange={(e) => setSearch(e.target.value)} type="search" className={styles.search} placeholder='Поиск...'/>
                 </div>
 
