@@ -9,13 +9,15 @@
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    cursor: pointer;
 }
 
 .card {
-    width: calc(25% - 40px);
+    width: 300px;
     border: 1px solid #F3F3F3;
     border-radius: 40px;
     padding: 20px 29px 34px 30px;
@@ -30,20 +32,25 @@
 
 .cardTitle {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
     margin: 14px 0;
+    text-align: center;
 }
 
 .cardImg {
-    width: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cardFooter {
     display: flex;
-    column-gap: 30px;
+    justify-content: space-around;
 }
 
 .cardPrice {

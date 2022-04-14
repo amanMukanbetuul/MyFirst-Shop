@@ -10,15 +10,15 @@ import styles from './monitor.module.css'
 
 const Pc = () => {
 
-    const {getAllShoes, shoes, addShoesInCart, cart, deleteShoesInCart, postFavourites, favourites, delFavourites} = useContext(CustomContext);
+    const {getMonitors, shoes, addShoesInCart, cart, deleteShoesInCart, postFavourites, favourites, delFavourites} = useContext(CustomContext);
 
     const [search, setSearch] = useState('');
 
     useEffect(() => {
         if (search !== '') {
-            getAllShoes(search)
+            getMonitors(search)
         } else  {
-            getAllShoes()
+            getMonitors()
         }
     }, [search]);
 
@@ -26,7 +26,7 @@ const Pc = () => {
         <section>
 
             <div className={styles.action}>
-                <h2 className={styles.title}>все кроссовки</h2>
+                <h2 className={styles.title}>Все мониторы</h2>
                 <input onChange={(e) => setSearch(e.target.value)} type="search" className={styles.search} placeholder='Поиск...'/>
             </div>
 
@@ -41,21 +41,36 @@ const Pc = () => {
                                 : <button type='button' className={styles.cardLike} onClick={() => postFavourites(item)}><BsHeart /></button>
                         }
 
-                        <LazyLoadImage effect='blur' src={item.imageUrl} alt="img" className={styles.cardImg}/>
+                        <div className={styles.pageContent}>
 
 
-                        <h3 className={styles.cardTitle}>{item.title}</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>{item.price.toString().slice(0, -3)}, {item.price.toString().substr(-3,)} .сом</p>
+                        <div className={styles.imageContent}>
+
+                            <LazyLoadImage effect='blur' src={item.imageUrl} alt="img" className={styles.cardImg}/>
+
+                        </div>
+
+
+                        <div className={styles.priceContent}>
+
+                            <h3 className={styles.cardTitle}>{item.title}</h3>
+
+                            <div className={styles.cardFooter}>
+                                <div className={styles.cardPrice}>
+                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
+                                    <p className={styles.cardPriceNum}>{item.price.toString().slice(0, -3)}, {item.price.toString().substr(-3,)}.сом</p>
+                                </div>
+                                {
+                                    cart.filter((el) => el.id === item.id).length ?
+                                        <button type='button' className={styles.cardBtnCheck} onClick={() => deleteShoesInCart(item.id)}> <BsCheck/> </button>
+                                        :
+                                        <button type='button' className={styles.cardBtn} onClick={() => addShoesInCart(item.id)}>Купить</button>
+                                }
                             </div>
-                            {
-                                cart.filter((el) => el.id === item.id).length ?
-                                    <button type='button' className={styles.cardBtnCheck} onClick={() => deleteShoesInCart(item.id)}> <BsCheck/> </button>
-                                    :
-                                    <button type='button' className={styles.cardBtn} onClick={() => addShoesInCart(item.id)}>+</button>
-                            }
+
+
+
+                        </div>
                         </div>
                     </div>
                 ))}

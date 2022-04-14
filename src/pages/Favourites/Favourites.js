@@ -3,8 +3,6 @@ import {CustomContext} from "../../context";
 import styles from "./favourites.module.css";
 import {Link} from 'react-router-dom'
 import {useNavigate} from 'react-router-dom'
-
-
 import { BsCheck } from 'react-icons/bs'
 import {FcLike} from 'react-icons/fc'
 import Image from "../../Assets/image9.png";

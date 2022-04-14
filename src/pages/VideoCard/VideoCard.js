@@ -8,17 +8,17 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import styles from './VideoCard.module.css'
 
 
-const VodeoCard = () => {
+const VideoCard = () => {
 
-    const {VideoCard, shoes, addShoesInCart, cart, deleteShoesInCart, postFavourites, favourites, delFavourites} = useContext(CustomContext);
+    const {getVideo, shoes, addShoesInCart, cart, deleteShoesInCart, postFavourites, favourites, delFavourites} = useContext(CustomContext);
 
     const [search, setSearch] = useState('');
 
     useEffect(() => {
         if (search !== '') {
-            VideoCard(search)
+            getVideo(search)
         } else  {
-            VideoCard()
+            getVideo()
         }
     }, [search]);
 
@@ -80,4 +80,4 @@ const VodeoCard = () => {
     );
 };
 
-export default VodeoCard;
+export default VideoCard;

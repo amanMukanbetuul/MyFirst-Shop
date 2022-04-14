@@ -1,0 +1,74 @@
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin: 40px 0;
+}
+.cpu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.card {
+    width: 300px;
+    border: 1px solid #F3F3F3;
+    border-radius: 40px;
+    padding: 20px 29px 34px 30px;
+    transition: .5s;
+}
+.card:hover {
+    border: 1px solid #8BB43C;
+    transition: .5s;
+    transform: translateY(-15px);
+    box-shadow: 0 14px 30px rgba(139, 180, 60, 0.5);
+}
+
+.cardTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 14px 0;
+    text-align: center;
+}
+
+.cardImg {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardPrice {
+
+}
+
+.cardPriceTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.cardPriceNum {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+

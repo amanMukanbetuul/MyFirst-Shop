@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './slider.module.css'
-import Frog from './image.png'
+import asus from './asus.jpg'
 import SliderLogo from './sliderLogo.png'
 import { RiArrowRightSLine } from 'react-icons/ri'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -28,7 +28,7 @@ const Slider = () => {
                         </div>
 
                         <div className={sliderRight}>
-                            <img src={Frog} alt=""/>
+                            <img src={asus} alt=""/>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -44,7 +44,7 @@ const Slider = () => {
                         </div>
 
                         <div className={sliderRight}>
-                            <img src={Frog} alt=""/>
+                            <img src={asus} alt=""/>
                         </div>
                     </div>
                 </SwiperSlide>
