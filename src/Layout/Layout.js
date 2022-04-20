@@ -43,11 +43,16 @@ import Jet from "../pages/printer/Jet/Jet";
 import External from "../pages/ExternalHDD/External";
 import WebCam from "../pages/WebCam/WebCam";
 import Hub from "../pages/Hubs/Hub";
+import Keayboard from "../pages/Keyboard/Keayboard";
+import Footer from "./Footer/Footer";
 
 
 const Layout = () => {
+
+
     const {layout} = styles;
 
+    const [isBurger, setIsBurger] = useState(false);
     const [isCart, setIsCart] = useState(false);
     const {getAllFavourites} = useContext(CustomContext);
 
@@ -59,7 +64,7 @@ const Layout = () => {
 
     return (
         <div className={layout}>
-            <Header isCart={isCart} setIsCart={setIsCart}/>
+            <Header isCart={isCart} setIsCart={setIsCart} isBurger={isBurger} setIsBurger={setIsBurger}/>
 
             <Routes>
                 <Route path='/' element={<Home/>}/>
@@ -68,7 +73,7 @@ const Layout = () => {
                 <Route path='/order' element={<Order/>}/>
                 <Route path='/pc' element={<Pc/>}/>
                 <Route path='/monitor' element={<Monitor/>}/>
-                <Route path='/CPU' element={<Cpu/>}/>
+                <Route path='/CPUs' element={<Cpu/>}/>
                 <Route path='/Amd' element={<Amd/>}/>
                 <Route path='/IntelCore' element={<IntelCore/>}/>
                 <Route path='/Pentium' element={<Pentium/>}/>
@@ -98,12 +103,10 @@ const Layout = () => {
                 <Route path='/ExternalHDD' element={<External/>}/>
                 <Route path='/WebCams' element={<WebCam/>}/>
                 <Route path='/Hub' element={<Hub/>}/>
-
-
-
-
+                <Route path='/Keyboard' element={<Keayboard/>}/>
             </Routes>
             <Cart isCart={isCart} setIsCart={setIsCart}/>
+
         </div>
     );
 };

@@ -5,30 +5,34 @@ import {Link} from 'react-router-dom'
 import styles from './home.module.css'
 
 
-import computers from './mainMenu/1.png';
-import monitor from './mainMenu/2.jpg'
-import CPU from './mainMenu/3.jpg'
-import MB from './mainMenu/4.jpg'
-import RAM from './mainMenu/5.jpg'
-import SSD from './mainMenu/6.jpg'
-import caseFrPc from './mainMenu/7.jpg'
-import  powerUntil from './mainMenu/8.jpg'
-import videoCard from './mainMenu/9.jpg'
-import DVD from './mainMenu/10.jpg'
-import culler from './mainMenu/11.jpg'
-import sound from './mainMenu/12.png'
-import keyboard from './mainMenu/13.jpg'
-import mouse from './mainMenu/14.png'
-import printer from './mainMenu/15.jpg'
-import externalHDs from './mainMenu/16.jpg'
-import USB from './mainMenu/17.jpg'
-import MicroSD from './mainMenu/18.jpg'
-import WEB from './mainMenu/19.webp'
-import headphones from './mainMenu/20.jpg'
-import LAN from './mainMenu/21.jpg'
-import connector from './mainMenu/22.webp'
-import power from './mainMenu/23.webp'
-import USBHUBS from './mainMenu/24.webp'
+
+import Case from './mainMenu/Case.jpg'
+import Headphone from './mainMenu/Headphone.jpg'
+import Keyboard from './mainMenu/Keyboard.jpg'
+import Monitor from './mainMenu/Monitor.jpg'
+import Mouse from './mainMenu/Mouse.jpg'
+import Sound from './mainMenu/Sound.jpg'
+import Connectors from './mainMenu/Connectors.jpg'
+import Core from './mainMenu/Core.jpg'
+import Discovod from './mainMenu/Discovod.jpg'
+import External from './mainMenu/External.jpg'
+import HUB from './mainMenu/HUB.jpg'
+import MicroSd from './mainMenu/MicroSd.jpg'
+import Mother from './mainMenu/MotherBoard.jpg'
+import OZU from './mainMenu/OZU.jpg'
+import PowerUntill from './mainMenu/PowerUntil.jpg'
+import Printer from './mainMenu/Printer.jpg'
+import Router from './mainMenu/Router.jpg'
+import Security from './mainMenu/SecurityPower.jpg'
+import SSD from './mainMenu/SSD.jpg'
+import USB from './mainMenu/USB.jpg'
+import VideoCard from './mainMenu/VideoCard.jpg'
+import WebCam from './mainMenu/WebCam.jpg'
+import Cooler from './mainMenu/Cooler.jpg'
+import Notebook from './mainMenu/Notebook.png'
+import Arrow from './mainMenu/Arrow.png'
+
+
 
 
 const Home = () => {
@@ -36,10 +40,8 @@ const Home = () => {
     return (
         <section>
             <Slider/>
-
-
             <div className={styles.action}>
-                <h2 className={styles.title}>Все товары </h2>
+                <h2 className={styles.title}>Каталог товаров</h2>
             </div>
 
 
@@ -49,39 +51,39 @@ const Home = () => {
 
                     <Link to='/Pc'>
                         <div className={styles.card}>
-                            <img src={computers} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Ноутбуки</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 26000 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Ноутбуки</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Notebook} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='/monitor'>
                         <div className={styles.card}>
-                            <img src={monitor} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Мониторы</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 4800 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Мониторы</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Monitor} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
-                    <Link to='/CPU'>
+                    <Link to='/CPUs'>
                         <div className={styles.card}>
-                            <img src={CPU} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Процессоры</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 5600 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Процессоры</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Core} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
@@ -89,104 +91,104 @@ const Home = () => {
 
                     <Link to='/MotherBoard'>
                         <div className={styles.card}>
-                            <img src={MB} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Материнские платы</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 4500 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Материнские платы</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Mother} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='/OZU'>
                         <div className={styles.card}>
-                            <img src={RAM} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Оперативная память</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 1800 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Оперативная память</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={OZU} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='SSDs'>
                         <div className={styles.card}>
-                            <img src={SSD} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Жёсткие и SSD диски</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 1200 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Жеские и SSD диски</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={SSD} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='/Casess'>
                         <div className={styles.card}>
-                            <img src={caseFrPc} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Корпуса для ПК</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 1800 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Корпуса для ПК</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Case} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='/Power'>
                         <div className={styles.card}>
-                            <img src={powerUntil} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Блоки питания</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 5000 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Блоки питания</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={PowerUntill} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='/Video'>
                         <div className={styles.card}>
-                            <img src={videoCard} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Видеокарты</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 7000 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Видеокарты</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={VideoCard} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='/CdRom'>
                         <div className={styles.card}>
-                            <img src={DVD} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Оптические приводы</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 1500 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Оптические приводы</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Discovod} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
                     <Link to='/Coolers'>
                         <div className={styles.card}>
-                            <img src={powerUntil} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Блоки питания</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 5000 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Системы охлаждения</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Cooler} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
@@ -194,156 +196,127 @@ const Home = () => {
 
                     <Link to='/Sounds'>
                         <div className={styles.card}>
-                            <img src={sound} alt="img" className={styles.cardImg}/>
-                            <h3 className={styles.cardTitle}>Колонки (акустика)</h3>
-                            <div className={styles.cardFooter}>
-                                <div className={styles.cardPrice}>
-                                    <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                    <p className={styles.cardPriceNum}>От 300 сом</p>
-                                </div>
+                            <div>
+                                <h1 className={styles.title}>Колонки (акустика)</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Sound} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </Link>
 
-
-                    <div className={styles.card}>
-                        <img src={keyboard} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Клавиатуры</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 400 сом</p>
+                    <Link to='/Keyboard'>
+                        <div className={styles.card}>
+                            <div>
+                                <h1 className={styles.title}>Клавиатруы</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Keyboard} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
-                    </div>
-
+                    </Link>
 
                     <div className={styles.card}>
-                        <img src={mouse} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Мышки</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 300 сом</p>
+                        <div className={styles.card}>
+                            <div>
+                                <h1 className={styles.title}>Мышки</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Mouse} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
                     </div>
 
                     <Link to='/Printers'>
-                    <div className={styles.card}>
-                        <img src={printer} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Принтеры</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 11500 сом</p>
+                        <div className={styles.card}>
+                            <div>
+                                <h1 className={styles.title}>Принтеры</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={Printer} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
-                    </div>
                     </Link>
 
 
                     <Link to='ExternalHDD'>
-                    <div className={styles.card}>
-                        <img src={externalHDs} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Внешние жесткие диски</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 4000 сом</p>
+                        <div className={styles.card}>
+                            <div>
+                                <h1 className={styles.title}>Внешние жеские диски</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={External} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
-                    </div>
                     </Link>
 
                     <div className={styles.card}>
-                        <img src={USB} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Флеш-карты USB (флешки)</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 300 сом</p>
-                            </div>
+                        <div>
+                            <h1 className={styles.title}>Флеш-карты USB (флешки)</h1>
+                            <p className={styles.price}>От 26.000 сом</p>
+                        </div>
+                        <div className={styles.cardFlex}>
+                            <img className={styles.image} src={USB} alt=""/>
+                            <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
 
                     <div className={styles.card}>
-                        <img src={MicroSD} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>SD, MicroSD, Card Reader</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 100 сом</p>
-                            </div>
+                        <div>
+                            <h1 className={styles.title}>SD, MicroSD, Card Reader</h1>
+                            <p className={styles.price}>От 26.000 сом</p>
+                        </div>
+                        <div className={styles.cardFlex}>
+                            <img className={styles.image} src={MicroSd} alt=""/>
+                            <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
 
                     <Link to='/WebCams'>
-                    <div className={styles.card}>
-                        <img src={WEB} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>WEB камеры</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 1200 сом</p>
+                        <div className={styles.card}>
+                            <div>
+                                <h1 className={styles.title}>WEB камеры</h1>
+                                <p className={styles.price}>От 26.000 сом</p>
+                            </div>
+                            <div className={styles.cardFlex}>
+                                <img className={styles.image} src={WebCam} alt=""/>
+                                <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                             </div>
                         </div>
-                    </div>
                     </Link>
-                    <div className={styles.card}>
-                        <img src={headphones} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Нушники</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 500 сом</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.card}>
-                        <img src={LAN} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Сетевое оборудование</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 200 сом</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.card}>
-                        <img src={connector} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Переходники, шнуры, коннекторы</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 50 сом</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div className={styles.card}>
-                        <img src={power} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>Системы защиты питания</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 3000 сом</p>
-                            </div>
+                        <div>
+                            <h1 className={styles.title}>Наушники</h1>
+                            <p className={styles.price}>От 26.000 сом</p>
+                        </div>
+                        <div className={styles.cardFlex}>
+                            <img className={styles.image} src={Headphone} alt=""/>
+                            <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
-
-
+                    
                      <Link to='/Hub'>
-                    <div className={styles.card}>
-                        <img src={USBHUBS} alt="img" className={styles.cardImg}/>
-                        <h3 className={styles.cardTitle}>USB хабы</h3>
-                        <div className={styles.cardFooter}>
-                            <div className={styles.cardPrice}>
-                                <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                                <p className={styles.cardPriceNum}>От 200 сом</p>
-                            </div>
-                        </div>
-                    </div>
+                         <div className={styles.card}>
+                             <div>
+                                 <h1 className={styles.title}>Хабы</h1>
+                                 <p className={styles.price}>От 26.000 сом</p>
+                             </div>
+                             <div className={styles.cardFlex}>
+                                 <img className={styles.image} src={HUB} alt=""/>
+                                 <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
+                             </div>
+                         </div>
                      </Link>
 
                 </div>

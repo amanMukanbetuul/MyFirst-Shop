@@ -17,7 +17,6 @@ const Cart = ({isCart, setIsCart}) => {
     };
 
     return (
-        <section >
             <div onClick={cartClose} className={styles.overlay} style={{display: isCart ? 'flex' : 'none'}}>
                 <div className={styles.cart}>
 
@@ -79,7 +78,6 @@ const Cart = ({isCart, setIsCart}) => {
                 <div className={styles.line} onClick={() => setIsCart(false)}/>
             </div>
             </div>
-        </section>
     );
 };
 

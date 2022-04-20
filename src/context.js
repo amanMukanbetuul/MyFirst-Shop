@@ -8,6 +8,8 @@ export const Context = (props) => {
     const [shoes, setShoes] = useState([]);
     const [monitors, setMonitors] = useState([]);
     const [cart, setCart] = useState([]);
+    const [burgerMenu, setBurgerMenu] = useState([]);
+
     const [favourites, setFavourites] = useState([]);
     const [orders, setOrders] = useState([]);
 
@@ -37,7 +39,7 @@ export const Context = (props) => {
 
 
     const getAllShoes = (title = '') => {
-      axios(`https://myfirst-shop.herokuapp.com/api/sneakers?title_like=${title}`)
+      axios(`https://myfirst-shop.herokuapp.com/api?title_like=${title}`)
           .then(({data}) => setShoes(data))
           .catch((err) => alert('Error'))
     };
@@ -233,6 +235,12 @@ export const Context = (props) => {
             .catch((err) => alert('Error'))
     };
 
+    const getKeyboard = (title = '') => {
+        axios(`https://myfirst-shop.herokuapp.com/api/Keyboards?title_like=${title}`)
+            .then(({data}) => setShoes(data))
+            .catch((err) => alert('Error'))
+    };
+
     const deleteShoesInCart = (id) => {
         setCart(cart.filter((item) => {
             return item.id !== id;
@@ -308,7 +316,10 @@ export const Context = (props) => {
         getJetPrinter,
         getExternal,
         getWebCam,
-        getHubs
+        getHubs,
+        getKeyboard,
+        burgerMenu,
+        setBurgerMenu
 
     };
 

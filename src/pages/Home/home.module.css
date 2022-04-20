@@ -1,117 +1,65 @@
-.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #000000;
-    margin: 40px 0;
-}
-
 .row {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-end;
-    cursor: pointer;
 }
-
-.card {
-    width: 300px;
-    border: 1px solid #F3F3F3;
-    border-radius: 40px;
-    padding: 20px 29px 34px 30px;
-    transition: .5s;
-}
-.card:hover {
-    border: 1px solid #8BB43C;
-    transition: .5s;
-    transform: translateY(-15px);
-    box-shadow: 0 14px 30px rgba(139, 180, 60, 0.5);
-}
-
-.cardTitle {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin: 14px 0;
-    text-align: center;
-}
-
-.cardImg {
-    width: 200px;
-    height: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cardFooter {
-    display: flex;
-    justify-content: space-around;
-}
-
-.cardPrice {
-
-}
-
-.cardPriceTitle {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 13px;
-    text-transform: uppercase;
-    color: #BDBDBD;
-}
-
-.cardPriceNum {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-}
-
-.cardBtn {
-    width: 34px;
-    height: 34px;
-    background: rgb(16, 101, 180);
-    border: 1px solid #00000030;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 10px;
-    color: #D3D3D3;
-}
-
-.cardBtnCheck {
-    background: forestgreen;
-    border: 1px solid #00000030;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 5px;
-    color: #D3D3D3;
-    font-size: 20px;
-}
-
-.cardLike {
-    background: #FFFFFF;
-    border: 1px solid #00000030;
-    border-radius: 7px;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .action {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.card{
+    width: 400px;
+    background: #e3e3e3;
+    margin-top: 50px;
+}
+.image{
+    width: 197px ;
+    float: right;
+}
+.cardFlex{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.title{
+    padding-top: 54px;
+    margin-left: 18px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+.price{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #787878;
+    margin-left: 18px;
+    padding-top:10px;
+}
+.CardBtn{
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #5179D7;
+    position: static;
+    margin-left: 18px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
 
 .search {
     border: 1px solid #8BB43C;
@@ -133,4 +81,54 @@
     font-size: 14px;
     line-height: 17px;
     color: #C4C4C4;
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+}
+
+
+@media screen and (max-width: 1199px){
+    .container{
+        width: 960px;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    .container{
+        width: 720px;
+    }
+    .card{
+        width: 330px;
+        justify-content: space-between;
+    }
+    .action{
+        margin-top: 100px;
+    }
+    .action h2{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .container{
+        width: 540px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .action h2{
+        font-size: 35px;
+    }
 }

@@ -1,98 +1,98 @@
-.title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #000000;
-    margin: 40px 0;
-}
-
 .pageContent{
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
-
-.card {
-    border: 1px solid #F3F3F3;
-    border-radius: 40px;
-    padding: 20px 29px 34px 30px;
-    transition: .5s;
-}
-
-.cardTitle {
-    width: 500px;
+.cardTitle{
+    width: 450px;
     font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 33px;
     color: #000000;
-    margin: 14px 0;
-    text-align: center;
 }
-
-.cardImg {
-    width: 200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.fullDiscr{
+    padding-top: 50px;
 }
-
-.cardFooter {
-    display: flex;
-    justify-content: space-around;
-}
-
-.cardPrice {
-
-}
-
-.cardPriceTitle {
+.discription{
     font-style: normal;
-    font-weight: 500;
-    font-size: 11px;
-    line-height: 13px;
-    text-transform: uppercase;
-    color: #BDBDBD;
-}
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    color: #A9A9A9;
 
+}
+.discription span{
+    color: #242424;
+    font-weight: 600;
+}
+.cardImg{
+    width: 250px;
+}
+.buyLike{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.cardPrice{
+    margin-bottom: auto;
+    margin-top: 50px;
+}
 .cardPriceNum {
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 32px;
+    line-height: 44px;
     color: #000000;
+
 }
 
 .cardBtn {
-    background: rgb(16, 101, 180);
+    width: 135px;
+    height: 42px;
+    background:#5179D7;;
     border: 1px solid #00000030;
-    border-radius: 8px;
     cursor: pointer;
     padding: 10px;
-    color: #D3D3D3;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    color: #FFFFFF;
 }
 
 .cardBtnCheck {
     background: forestgreen;
-    border: 1px solid #00000030;
-    border-radius: 8px;
+    width: 135px;
+    height: 42px;
+    border:none;
     cursor: pointer;
-    padding: 5px;
-    color: #D3D3D3;
-    font-size: 20px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin-top: 20px;
 }
 
 .cardLike {
     background: #FFFFFF;
-    border: 1px solid #00000030;
-    border-radius: 7px;
+    color: #b4b4b4;
+    border:none;
     width: 32px;
     height: 32px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    font-size: 25px;
 }
 
 .action {
@@ -100,9 +100,15 @@
     justify-content: space-between;
     align-items: center;
 }
+.action h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 66px;
+}
 
 .search {
-    border: 1px solid #8BB43C;
+    border: 1px solid #5179D7;
     border-radius: 10px;
     outline: none;
     width: 250px;
@@ -121,4 +127,52 @@
     font-size: 14px;
     line-height: 17px;
     color: #C4C4C4;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+}
+
+
+@media screen and (max-width: 1199px){
+    .container{
+        width: 960px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 991px){
+    .container{
+        width: 720px;
+    }
+    .pageContent{
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 767px){
+    .container{
+        width: 540px;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .action{
+        flex-direction: column;
+    }
+    .cardTitle{
+        width: 300px;
+        font-size: 18px;
+    }
 }

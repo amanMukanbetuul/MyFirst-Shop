@@ -1,66 +1,72 @@
 import React from 'react';
 import styles from "./CPU.module.css";
 import {Link} from "react-router-dom";
-import AMD from '../../Assets/amd.webp'
-import corei9 from '../../Assets/coreI9.webp'
-import pentium from '../../Assets/pentium.webp'
-import celerone from '../../Assets/celerone.webp'
+import AMD from '../../Assets/ryzen.jpg'
+import corei9 from '../../Assets/coreI9.jpg'
+import pentium from '../../Assets/PRPDCE5700-1.jpg'
+import celerone from '../../Assets/orig.webp'
+import Arrow from "../Home/mainMenu/Arrow.png";
 
 const Cpu = () => {
     return (
-        <div className={styles.cpu}>
-            <Link to='/Amd'>
-                <div className={styles.card}>
-                    <img src={AMD} alt="img" className={styles.cardImg}/>
-                    <h3 className={styles.cardTitle}>AMD</h3>
-                    <div className={styles.cardFooter}>
-                        <div className={styles.cardPrice}>
-                            <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                            <p className={styles.cardPriceNum}>От 26000 сом</p>
+        <div>
+            <h1>Процессоры</h1>
+            <div className={styles.cpu}>
+                <Link to='/Amd'>
+                    <div className={styles.card}>
+                        <div>
+                            <h1 className={styles.title}>AMD Ryzen</h1>
+                            <p className={styles.price}>От 26.000 сом</p>
+                        </div>
+                        <div className={styles.cardFlex}>
+                            <img className={styles.image} src={AMD} alt=""/>
+                            <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
 
-            <Link to='/IntelCore'>
-                <div className={styles.card}>
-                    <img src={corei9} alt="img" className={styles.cardImg}/>
-                    <h3 className={styles.cardTitle}>INTEL i3, i5, i7, i9</h3>
-                    <div className={styles.cardFooter}>
-                        <div className={styles.cardPrice}>
-                            <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                            <p className={styles.cardPriceNum}>От 26000 сом</p>
+                <Link to='/IntelCore'>
+                    <div className={styles.card}>
+                        <div>
+                            <h1 className={styles.title}>Intel i3, i5, i7, i9</h1>
+                            <p className={styles.price}>От 26.000 сом</p>
+                        </div>
+                        <div className={styles.cardFlex}>
+                            <img className={styles.image} src={corei9} alt=""/>
+                            <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
 
-            <Link to='/Pentium'>
-                <div className={styles.card}>
-                    <img src={pentium} alt="img" className={styles.cardImg}/>
-                    <h3 className={styles.cardTitle}>INTEL Pentium Dual Core</h3>
-                    <div className={styles.cardFooter}>
-                        <div className={styles.cardPrice}>
-                            <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                            <p className={styles.cardPriceNum}>От 26000 сом</p>
+                <Link to='/Pentium'>
+                    <div className={styles.card}>
+                        <div>
+                            <h1 className={styles.title}>INTEL Pentium Dual Core</h1>
+                            <p className={styles.price}>От 26.000 сом</p>
+                        </div>
+                        <div className={styles.cardFlex}>
+                            <img className={styles.image} src={pentium} alt=""/>
+                            <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
 
-            <Link to='/Celeron'>
-                <div className={styles.card}>
-                    <img src={celerone} alt="img" className={styles.cardImg}/>
-                    <h3 className={styles.cardTitle}>Intel Celerone</h3>
-                    <div className={styles.cardFooter}>
-                        <div className={styles.cardPrice}>
-                            <h4 className={styles.cardPriceTitle}>Цена:</h4>
-                            <p className={styles.cardPriceNum}>От 26000 сом</p>
+                <Link to='/Celeron'>
+                    <div className={styles.card}>
+                        <div>
+                            <h1 className={styles.title}>Intel Celeron</h1>
+                            <p className={styles.price}>От 26.000 сом</p>
+                        </div>
+                        <div className={styles.cardFlex}>
+                            <img className={styles.image} src={celerone} alt=""/>
+                            <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
-                </div>
-            </Link>
+                </Link>
+            </div>
         </div>
+
+
     );
 };
 
