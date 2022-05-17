@@ -105,7 +105,7 @@ const Home = () => {
                     <Link to='/OZU'>
                         <div className={styles.card}>
                             <div>
-                                <h1 className={styles.title}>Оперативная память</h1>
+                                <h1 className={styles.title}>Опер. память</h1>
                                 <p className={styles.price}>От 26.000 сом</p>
                             </div>
                             <div className={styles.cardFlex}>
