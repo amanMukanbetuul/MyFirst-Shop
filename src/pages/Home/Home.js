@@ -5,6 +5,12 @@ import {Link} from 'react-router-dom'
 import styles from './home.module.css'
 
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import {Navigation, Autoplay} from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
+
+
 
 import Case from './mainMenu/Case.jpg'
 import Headphone from './mainMenu/Headphone.jpg'
@@ -32,6 +38,12 @@ import Cooler from './mainMenu/Cooler.jpg'
 import Notebook from './mainMenu/Notebook.png'
 import Arrow from './mainMenu/Arrow.png'
 
+import Mothers from  './mainMenu/Mother.png'
+import Video from  './mainMenu/Video.png'
+import Monitors from  './mainMenu/monitors.png'
+import phones from  './mainMenu/phones.png'
+import cooling from  './mainMenu/cooling.png'
+
 
 
 
@@ -43,6 +55,93 @@ const Home = () => {
             <div className={styles.action}>
                 <h2 className={styles.title}>Каталог товаров</h2>
             </div>
+
+            <Swiper loop={true} autoplay={{
+                delay: 50,
+                disableOnInteraction: false
+            }} className='mySwiper'>
+                <SwiperSlide>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderLeft}>
+                            <div className={styles.carousel}>
+                                <img src={Video} alt=""/>
+                                <p>Graphics Card</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={Monitors} alt=""/>
+                                <p>Monitors</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={phones} alt=""/>
+                                <p>Phones</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={cooling} alt=""/>
+                                <p>Cooling</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={Mothers} alt=""/>
+                                <p>Motherboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderLeft}>
+                            <div className={styles.carousel}>
+                                <img src={Video} alt=""/>
+                                <p>Graphics Card</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={Monitors} alt=""/>
+                                <p>Monitors</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={phones} alt=""/>
+                                <p>Phones</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={cooling} alt=""/>
+                                <p>Cooling</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={Mothers} alt=""/>
+                                <p>Motherboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className={styles.sliderContent}>
+                        <div className={styles.sliderLeft}>
+                            <div className={styles.carousel}>
+                                <img src={Video} alt=""/>
+                                <p>Graphics Card</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={Monitors} alt=""/>
+                                <p>Monitors</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={phones} alt=""/>
+                                <p>Phones</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={cooling} alt=""/>
+                                <p>Cooling</p>
+                            </div>
+                            <div className={styles.carousel}>
+                                <img src={Mothers} alt=""/>
+                                <p>Motherboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
 
 
             <div className={styles.mainMenuContent}>

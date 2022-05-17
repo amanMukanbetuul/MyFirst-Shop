@@ -38,10 +38,6 @@ ul li a{
 
 
 }
-ul li {
-    width: 300px;
-}
-
 
 @media screen and (max-width: 1200px){
     .container{
