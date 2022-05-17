@@ -51,8 +51,6 @@ const Header = ({isCart, setIsCart,}) => {
 
 
                 <div className={headerRight}>
-                    <a className={nav_bar_contact} href="tel:+996700466412">0(700)466412</a>
-                    <a className={nav_bar_contact} href="tel:+996700466412">0(700)466412</a>
                     <div className={headerRightBasket}>
                             <span style={{cursor: 'pointer'}} onClick={() => setIsCart(true)}>
                                 <MdOutlineLocalGroceryStore/>
