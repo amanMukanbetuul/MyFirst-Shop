@@ -39,115 +39,115 @@ export const Context = (props) => {
 
 
     const getAllShoes = (title = '') => {
-      axios(`https://myfirst-shop.herokuapp.com/api?title_like=${title}`)
+      axios(`http://localhost:8080/sneakers?title_like=${title}`)
           .then(({data}) => setShoes(data))
           .catch((err) => alert('Error'))
     };
 
     const postFavourites = (item) => {
-        axios.post('https://myfirst-shop.herokuapp.com/api/favourites', {...item})
+        axios.post('http://localhost:8080/favourites', {...item})
             .then(() => getAllFavourites())
     };
 
     const delFavourites = (id) => {
-      axios.delete(`https://myfirst-shop.herokuapp.com/api/favourites/${id}`)
+      axios.delete(`http://localhost:8080/favourites/${id}`)
           .then(() => getAllFavourites())
     };
 
     const getAllFavourites = () => {
-        axios.get('https://myfirst-shop.herokuapp.com/api/favourites')
+        axios.get('http://localhost:8080/favourites')
             .then(({data}) => setFavourites(data))
             .catch((err) => alert('Error'))
     };
 
     const getAllOrders = () => {
-        axios.get('https://myfirst-shop.herokuapp.com/api/orders')
+        axios.get('http://localhost:8080/orders')
             .then(({data}) => setOrders(data))
             .catch((err) => alert('Error'))
     };
 
     const postOrders = (item) => {
-        axios.post('https://myfirst-shop.herokuapp.com/api/orders', {...item})
+        axios.post('http://localhost:8080/orders', {...item})
             .then(() => getAllOrders())
     };
 
     const getMonitors = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/Monitor?title_like=${title}`)
+        axios(`http://localhost:8080/Monitor?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
     const getAmd = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/amdCPU?title_like=${title}`)
+        axios(`http://localhost:8080/amdCPU?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
     const getIntelCore = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/intelCore?title_like=${title}`)
+        axios(`http://localhost:8080/intelCore?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
     const getPentium = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/pentium?title_like=${title}`)
+        axios(`http://localhost:8080/pentium?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
     const getCeleron = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/celeron?title_like=${title}`)
+        axios(`http://localhost:8080/celeron?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
     const getSocket1151 = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/socket1151?title_like=${title}`)
+        axios(`http://localhost:8080/socket1151?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getSocketLGA1700 = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/LGA1700?title_like=${title}`)
+        axios(`http://localhost:8080/LGA1700?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
 
     const getSocket1150 = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/socket1050?title_like=${title}`)
+        axios(`http://localhost:8080/socket1050?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getSocket1151Gen = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/socket1151Gen?title_like=${title}`)
+        axios(`http://localhost:8080/socket1151Gen?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
 
     const getSocketAMD = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/AMD?title_like=${title}`)
+        axios(`http://localhost:8080/AMD?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getSocketLGA= (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/LGA1200?title_like=${title}`)
+        axios(`http://localhost:8080/LGA1200?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getDdr4= (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/DDR4?title_like=${title}`)
+        axios(`http://localhost:8080/DDR4?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getDdr5= (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/DDR5?title_like=${title}`)
+        axios(`http://localhost:8080/DDR5?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getDdr3= (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/DDR3?title_like=${title}`)
+        axios(`http://localhost:8080/DDR3?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
@@ -158,85 +158,103 @@ export const Context = (props) => {
     };
 
     const getSSD   = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/SSD?title_like=${title}`)
+        axios(`http://localhost:8080/SSD?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getCases   = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/cases?title_like=${title}`)
+        axios(`http://localhost:8080/cases?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getVideo   = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/VideoCard?title_like=${title}`)
+        axios(`http://localhost:8080/VideoCard?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getDvdrom  = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/Dvd?title_like=${title}`)
+        axios(`http://localhost:8080/Dvd?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getCooler  = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/Cooler?title_like=${title}`)
+        axios(`http://localhost:8080/Cooler?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getPowerUntil   = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/powerUntil?title_like=${title}`)
+        axios(`http://localhost:8080/powerUntil?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getSound  = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/Sound?title_like=${title}`)
+        axios(`http://localhost:8080/Sound?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getLaserPrinter = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/LaserPrinters?title_like=${title}`)
+        axios(`http://localhost:8080/LaserPrinters?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getMfuPrinter = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/MFUPrinter?title_like=${title}`)
+        axios(`http://localhost:8080/MFUPrinter?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getJetPrinter = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/JetPrinters?title_like=${title}`)
+        axios(`http://localhost:8080/JetPrinters?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getExternal = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/External?title_like=${title}`)
+        axios(`http://localhost:8080/External?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getWebCam = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/WebCam?title_like=${title}`)
+        axios(`http://localhost:8080/WebCam?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getHubs = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/Hubs?title_like=${title}`)
+        axios(`http://localhost:8080/Hubs?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
 
     const getKeyboard = (title = '') => {
-        axios(`https://myfirst-shop.herokuapp.com/api/Keyboards?title_like=${title}`)
+        axios(`http://localhost:8080/Keyboards?title_like=${title}`)
+            .then(({data}) => setShoes(data))
+            .catch((err) => alert('Error'))
+    };
+
+    const getMouse = (title = '') => {
+        axios(`http://localhost:8080/mouses?title_like=${title}`)
+            .then(({data}) => setShoes(data))
+            .catch((err) => alert('Error'))
+    };
+
+    const getUSB = (title = '') => {
+        axios(`http://localhost:8080/usb?title_like=${title}`)
+            .then(({data}) => setShoes(data))
+            .catch((err) => alert('Error'))
+    };
+
+    const getMicroSd = (title = '') => {
+        axios(`http://localhost:8080/MicroSD?title_like=${title}`)
             .then(({data}) => setShoes(data))
             .catch((err) => alert('Error'))
     };
@@ -319,7 +337,10 @@ export const Context = (props) => {
         getHubs,
         getKeyboard,
         burgerMenu,
-        setBurgerMenu
+        setBurgerMenu,
+        getMouse,
+        getUSB,
+        getMicroSd
 
     };
 

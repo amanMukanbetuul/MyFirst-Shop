@@ -45,6 +45,9 @@ import WebCam from "../pages/WebCam/WebCam";
 import Hub from "../pages/Hubs/Hub";
 import Keayboard from "../pages/Keyboard/Keayboard";
 import Footer from "./Footer/Footer";
+import Mouse from "../pages/Mouse/Mouse";
+import Usb from "../pages/USB/usb";
+import MicroSd from "../pages/MicroSd/MicroSd";
 
 
 const Layout = () => {
@@ -104,6 +107,9 @@ const Layout = () => {
                 <Route path='/WebCams' element={<WebCam/>}/>
                 <Route path='/Hub' element={<Hub/>}/>
                 <Route path='/Keyboard' element={<Keayboard/>}/>
+                <Route path='/Mouses' element={<Mouse/>}/>
+                <Route path='/Usbs' element={<Usb/>}/>
+                <Route path='/Microsds' element={<MicroSd/>}/>
             </Routes>
             <Cart isCart={isCart} setIsCart={setIsCart}/>
 

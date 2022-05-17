@@ -41,14 +41,7 @@ ul li a{
 ul li {
     width: 300px;
 }
-ul li a:hover {
-    transition: 1s;
-    margin-left: 20px;
-}
-ul li:hover {
-    background-color: #4c4c4c;
-    transition: 0.5s;
-}
+
 
 @media screen and (max-width: 1200px){
     .container{
@@ -81,7 +74,7 @@ ul li:hover {
         display: none;
     }
     .menu__content{
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -92,5 +85,8 @@ ul li:hover {
     }
     ul li a{
         margin-left: 20px;
+    }
+    .menu__content{
+        width: 70%;
     }
 }

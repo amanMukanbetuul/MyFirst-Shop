@@ -220,6 +220,7 @@ const Home = () => {
                         </div>
                     </Link>
 
+                    <Link to='Mouses'>
                     <div className={styles.card}>
                         <div className={styles.card}>
                             <div>
@@ -232,6 +233,9 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                     </Link>
+
+
 
                     <Link to='/Printers'>
                         <div className={styles.card}>
@@ -260,6 +264,8 @@ const Home = () => {
                         </div>
                     </Link>
 
+
+                    <Link to='Usbs'>
                     <div className={styles.card}>
                         <div>
                             <h1 className={styles.title}>Флеш-карты USB (флешки)</h1>
@@ -270,7 +276,10 @@ const Home = () => {
                             <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
+                    </Link>
 
+
+                    <Link to='/Microsds'>
                     <div className={styles.card}>
                         <div>
                             <h1 className={styles.title}>SD, MicroSD, Card Reader</h1>
@@ -281,6 +290,9 @@ const Home = () => {
                             <button className={styles.CardBtn}><img src={Arrow} alt=""/></button>
                         </div>
                     </div>
+                    </Link>
+
+
 
                     <Link to='/WebCams'>
                         <div className={styles.card}>
